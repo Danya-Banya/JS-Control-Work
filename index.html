@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interface studio</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__item">
+          <img src="./assets/Frame.png" alt="" class="header__item--logo" />
+          <div class="header__item--nav">
+            <button class="header__btn">О себе</button>
+            <button class="header__btn">Навыки</button>
+            <button class="header__btn">Контакты</button>
+          </div>
+          <img
+            src="./assets/mingcute_menu-fill.png"
+            class="header__mediaMenu"
+            onclick="showMenu()"
+            alt=""
+          />
+          <div class="header__item--mediaSmall hidden">
+            <img
+              src="./assets/mingcute_menu-fill.png"
+              class="header__mediaMenu"
+              onclick="hideMenu()"
+              alt=""
+            />
+            <button class="header__btn">О себе</button>
+            <button class="header__btn">Навыки</button>
+            <button class="header__btn">Контакты</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="main__header">
+          <div class="main__header--hello">
+            <button class="main__headerBtn">Hello!</button>
+            <img
+              src="./assets/Vector 1 (1).png"
+              class="main__header--vector"
+              alt=""
+            />
+          </div>
+        </div>
+        <h1 class="main__title">
+          I'm Aziz, <br />
+          Frontend Developer
+          <div class="main__titleDiv">
+            <img
+              class="main__titleVector"
+              src="./assets/Vector 2 (1).png"
+              alt=""
+            />
+          </div>
+        </h1>
+
+        <div class="main__item">
+          <p class="main__description">
+            Я студент, изучающий современные веб- <br />технологии и
+            пользовательские интерфейсы. <br />
+            Увлекаюсь разработкой адаптивных сайтов и <br />
+            постоянно совершенствую свои <br />
+            навыки в HTML, CSS, SCSS и <br />
+            JavaScript. Стремлюсь создавать удобные.
+          </p>
+          <div class="main__images">
+            <img src="./assets/man.png" class="main__imageMan" alt="" />
+            <img src="./assets/Ellipse 2.png" class="main__imageBg" alt="" />
+          </div>
+          <span class="main__yearOld">21 years</span>
+        </div>
+        <button class="main__btn">Проверить доступ</button>
+      </div>
+    </main>
+    <section class="skills">
+      <div class="container">
+        <h2 class="skills__title">Мои навыки</h2>
+        <div class="skills__item">
+          <div class="skills__card">
+            <img src="./assets/figma.png" class="skills__itemCardImg" alt="" />
+            <div class="skills__itemCardContent">
+              <h3 class="skills__cardTitle">FIGMA</h3>
+              <img src="./assets/lines/Group 1901 (1).png" alt="" />
+            </div>
+          </div>
+          <div class="skills__card">
+            <img src="./assets/html.png" class="skills__itemCardImg" alt="" />
+            <div class="skills__itemCardContent">
+              <h3 class="skills__cardTitle">HTML</h3>
+              <img src="./assets/lines/Group 1901 (2).png" alt="" />
+            </div>
+          </div>
+          <div class="skills__card">
+            <img src="./assets/css.png" class="skills__itemCardImg" alt="" />
+            <div class="skills__itemCardContent">
+              <h3 class="skills__cardTitle">CSS</h3>
+              <img src="./assets/lines/Group 1901 (4).png" alt="" />
+            </div>
+          </div>
+          <div class="skills__card">
+            <img src="./assets/git.png" class="skills__itemCardImg" alt="" />
+            <div class="skills__itemCardContent">
+              <h3 class="skills__cardTitle">Git</h3>
+              <img src="./assets/lines/Group 1901 (2).png" alt="" />
+            </div>
+          </div>
+          <div class="skills__card">
+            <img src="./assets/js.png" class="skills__itemCardImg" alt="" />
+            <div class="skills__itemCardContent">
+              <h3 class="skills__cardTitle">JS</h3>
+              <img src="./assets/lines/Group 1901.png" alt="" />
+            </div>
+          </div>
+          <div class="skills__card">
+            <img src="./assets/sass.png" class="skills__itemCardImg" alt="" />
+            <div class="skills__itemCardContent">
+              <h3 class="skills__cardTitle">SCSS</h3>
+              <img src="./assets/lines/Group 1901 (1).png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__item">
+          <div class="footer__top">
+            <div class="footer__nav">
+              <h3 class="footer__nav--title">Навигация</h3>
+              <h4>О себе</h4>
+              <h4>Навыки</h4>
+              <h4>Контакты</h4>
+            </div>
+            <div class="footer__cont">
+              <h3 class="footer__cont--title">Контакты</h3>
+              <h4>info@student.kg</h4>
+              <h4>+996 (312) 123-456</h4>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <h4 class="footer__bottom--copy">Все права защищены © 2026</h4>
+            <h4 class="footer__bottom--name">Geeks Pro</h4>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>

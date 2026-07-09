@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hidden{
+    display: none !important;
+}
+
+$bl: #6155F5;
+$db: #cecece;
+$fontColor: #171717;
+$lightGray: #344054;
+
+@mixin urbanist-medium {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin urbanist-d {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: bold;
+}
+
+@mixin urbanist-bold {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@mixin plex {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 500;
+    font-style: bold;
+}
+
+@mixin poppins-medibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@mixin inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-left: 71px;
+    padding-right: 71px;
+    // background-color: black;
+}
+
+.header {
+    &__item {
+        display: flex;
+        align-items: center;
+        background-color: $bl;
+        justify-content: space-between;
+        padding: 14px 40px 14px 40px;
+        border-radius: 50px;
+
+        &--nav {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+
+    &__mediaMenu {
+        display: none;
+    }
+
+    &__mediaSmall {
+        display: none;
+    }
+
+    &__btn {
+        border: none;
+        width: 208px;
+        height: 51px;
+        opacity: 1;
+        border-radius: 60px;
+        border-width: 0.5px;
+        font-size: 25px;
+
+        &:hover {
+            background-color: $db;
+        }
+    }
+}
+
+.main {
+    &__item {
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+    }
+
+    &__header {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        padding-top: 24px;
+        position: relative;
+        width: 100%;
+
+        &--hello {
+            justify-self: center;
+        }
+
+        &--vector {
+            position: absolute;
+            top: 5px;
+            right: 44%;
+        }
+    }
+
+    &__headerBtn {
+        font-size: 20px;
+        width: 103px;
+        height: 45px;
+        border-radius: 45px;
+        border: $fontColor 2px solid;
+        background: none;
+
+        color: $fontColor;
+        @include urbanist-d()
+    }
+
+    &__title {
+        font-size: 96px;
+        text-align: center;
+        color: $fontColor;
+        @include urbanist-bold()
+    }
+
+    &__titleDiv {
+        position: relative;
+    }
+
+    &__titleVector {
+        position: absolute;
+        left: 6%;
+        top: -30px;
+    }
+
+    &__description {
+        margin-top: 100px;
+        max-width: 455px;
+        width: 100%;
+        color: $lightGray;
+        font-size: 20px;
+        letter-spacing: 0%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        @include plex()
+    }
+
+    &__images {
+        position: relative;
+        display: grid;
+        justify-items: center;
+        margin-top: -100px;
+    }
+
+    &__imageBg {
+        width: 811px;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    &__yearOld {
+        color: #000000;
+        @include plex();
+        font-size: 20px;
+        position: absolute;
+        right: 0;
+        top: 20%;
+        font-weight: 500;
+    }
+
+    &__btn {
+        width: 100%;
+        height: 80px;
+        padding: 28px 0 28px 0;
+        background-color: $bl;
+        font-size: 20px;
+        font-weight: 590;
+        text-align: center;
+        color: #fff;
+        border: none;
+        border-radius: 50px;
+    }
+}
+
+.skills {
+    margin-top: 100px;
+
+    &__title {
+        font-size: 32px;
+        margin-bottom: 42px;
+        @include urbanist-bold()
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 22px;
+    }
+
+    &__itemCardImg {
+        justify-self: center;
+    }
+
+    &__card {
+        display: flex;
+        align-items: start;
+        background-color: $bl;
+        border-radius: 40px;
+        width: 577px;
+        height: 222px;
+        padding: 26px 46px 26px 46px;
+        justify-items: center;
+        align-items: center;
+        gap: 48px;
+        @include poppins-medibold();
+        color: #fff;
+        font-size: 26px;
+    }
+
+    &__itemCardContent {
+        display: grid;
+        justify-content: space-between;
+        gap: 76px;
+    }
+}
+
+.footer {
+    width: 100%;
+    margin-top: 100px;
+
+    &__item {
+        background-color: $bl;
+        border-radius: 50px;
+        padding: 50px 90px 50px 90px;
+        width: 100%;
+        display: grid;
+        gap: 100px;
+    }
+
+    &__top {
+        display: flex;
+        gap: 220px;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+        @include inter();
+
+        &--name {
+            opacity: 70%;
+        }
+    }
+
+    &__nav {
+        h4 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: #fff;
+            @include inter();
+            font-size: 20px;
+        }
+
+        &--title {
+            color: #FFFFFF;
+            opacity: 70%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: #fff;
+            @include inter();
+            font-size: 20px;
+        }
+    }
+
+    &__cont {
+        h4 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: #fff;
+            @include inter();
+            font-size: 20px;
+        }
+
+        &--title {
+            color: #FFFFFF;
+            opacity: 70%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: #fff;
+            @include inter();
+            font-size: 20px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1320px) {
+    .main {
+        &__descirption {
+            max-width: 350px;
+        }
+
+        &__titleVector {
+            display: none;
+        }
+    }
+
+    .skills {
+        &__item {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        &__card {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0;
+    }
+
+    .header {
+
+        &__btn {
+            width: 150px;
+            height: 50px;
+        }
+
+        &__item {
+            justify-content: space-between;
+        }
+    }
+
+    .main {
+        &__btn{
+            border-radius: 0 0 20px 20px;
+        }
+        &__yearOld {
+            display: none;
+        }
+        &__description{
+            display: none;
+        }
+        overflow-x: hidden;
+
+        &__imageBg {
+            width: 600px;
+        }
+        &__descitpion {
+            margin: 0;
+        }
+    }
+}
+@media screen and (max-width: 576px) {
+
+    .header{
+        &__mediaMenu{
+            display: block;
+        }
+        &__item{
+            &--mediaSmall{
+                height: 100vh;
+                width: 40vw;
+                position: fixed;
+                right: 0;
+                top: 0;
+                background-color: #cecece;
+                z-index: 3;
+                display: grid;
+                gap: 10px;
+                padding: 10px;
+            }
+            &--nav{
+                display: none;
+            }
+        }
+    }
+    .skills{
+        &__item{
+            justify-items: center;
+        }
+        &__title{
+            padding-left: 35px;
+        }
+        &__card{
+            width: 90vw;
+            display: grid;
+            height: auto;
+        }
+    }
+    .footer{
+        &__item{
+            padding: 20px 30px 20px 30px;
+        }
+        &__nav{
+            font-size: 16px;
+        }
+        &__cont{
+            font-size: 16px;
+        }
+    }
+}

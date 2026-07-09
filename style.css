@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-left: 71px;
+  padding-right: 71px;
+}
+
+.header__item {
+  display: flex;
+  align-items: center;
+  background-color: #6155F5;
+  justify-content: space-between;
+  padding: 14px 40px 14px 40px;
+  border-radius: 50px;
+}
+.header__item--nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header__mediaMenu {
+  display: none;
+}
+.header__mediaSmall {
+  display: none;
+}
+.header__btn {
+  border: none;
+  width: 208px;
+  height: 51px;
+  opacity: 1;
+  border-radius: 60px;
+  border-width: 0.5px;
+  font-size: 25px;
+}
+.header__btn:hover {
+  background-color: #cecece;
+}
+
+.main__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+.main__header {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 24px;
+  position: relative;
+  width: 100%;
+}
+.main__header--hello {
+  justify-self: center;
+}
+.main__header--vector {
+  position: absolute;
+  top: 5px;
+  right: 44%;
+}
+.main__headerBtn {
+  font-size: 20px;
+  width: 103px;
+  height: 45px;
+  border-radius: 45px;
+  border: #171717 2px solid;
+  background: none;
+  color: #171717;
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: bold;
+}
+.main__title {
+  font-size: 96px;
+  text-align: center;
+  color: #171717;
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.main__titleDiv {
+  position: relative;
+}
+.main__titleVector {
+  position: absolute;
+  left: 6%;
+  top: -30px;
+}
+.main__description {
+  margin-top: 100px;
+  max-width: 455px;
+  width: 100%;
+  color: #344054;
+  font-size: 20px;
+  letter-spacing: 0%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 500;
+  font-style: bold;
+}
+.main__images {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  margin-top: -100px;
+}
+.main__imageBg {
+  width: 811px;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+.main__yearOld {
+  color: #000000;
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 500;
+  font-style: bold;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  top: 20%;
+  font-weight: 500;
+}
+.main__btn {
+  width: 100%;
+  height: 80px;
+  padding: 28px 0 28px 0;
+  background-color: #6155F5;
+  font-size: 20px;
+  font-weight: 590;
+  text-align: center;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+}
+
+.skills {
+  margin-top: 100px;
+}
+.skills__title {
+  font-size: 32px;
+  margin-bottom: 42px;
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.skills__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+.skills__itemCardImg {
+  justify-self: center;
+}
+.skills__card {
+  display: flex;
+  align-items: start;
+  background-color: #6155F5;
+  border-radius: 40px;
+  width: 577px;
+  height: 222px;
+  padding: 26px 46px 26px 46px;
+  justify-items: center;
+  align-items: center;
+  gap: 48px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #fff;
+  font-size: 26px;
+}
+.skills__itemCardContent {
+  display: grid;
+  justify-content: space-between;
+  gap: 76px;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 100px;
+}
+.footer__item {
+  background-color: #6155F5;
+  border-radius: 50px;
+  padding: 50px 90px 50px 90px;
+  width: 100%;
+  display: grid;
+  gap: 100px;
+}
+.footer__top {
+  display: flex;
+  gap: 220px;
+}
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.footer__bottom--name {
+  opacity: 70%;
+}
+.footer__nav h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+}
+.footer__nav--title {
+  color: #FFFFFF;
+  opacity: 70%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+}
+.footer__cont h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+}
+.footer__cont--title {
+  color: #FFFFFF;
+  opacity: 70%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1320px) {
+  .main__descirption {
+    max-width: 350px;
+  }
+  .main__titleVector {
+    display: none;
+  }
+  .skills__item {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .skills__card {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0;
+  }
+  .header__btn {
+    width: 150px;
+    height: 50px;
+  }
+  .header__item {
+    justify-content: space-between;
+  }
+  .main__btn {
+    border-radius: 0 0 20px 20px;
+  }
+  .main__yearOld {
+    display: none;
+  }
+  .main__description {
+    display: none;
+  }
+  .main {
+    overflow-x: hidden;
+  }
+  .main__imageBg {
+    width: 600px;
+  }
+  .main__descitpion {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header__mediaMenu {
+    display: block;
+  }
+  .header__item--mediaSmall {
+    height: 100vh;
+    width: 40vw;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #cecece;
+    z-index: 3;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+  }
+  .header__item--nav {
+    display: none;
+  }
+  .skills__item {
+    justify-items: center;
+  }
+  .skills__title {
+    padding-left: 35px;
+  }
+  .skills__card {
+    width: 90vw;
+    display: grid;
+    height: auto;
+  }
+  .footer__item {
+    padding: 20px 30px 20px 30px;
+  }
+  .footer__nav {
+    font-size: 16px;
+  }
+  .footer__cont {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
